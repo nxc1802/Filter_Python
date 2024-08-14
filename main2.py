@@ -46,7 +46,7 @@ with mp_face_detection.FaceDetection(
                 overlay_resize = cv2.resize(overlay, (int(w * 1.5), int(h * 1.5)))
 
                 # Đặt ảnh overlay lên khung hình
-                frame = cvzone.overlayPNG(frame, overlay_resize, [x - 45, y - 75])
+                frame = cvzone.overlayPNG(frame, overlay_resize, [x - 45, y - 120])
 
         # Hiển thị khung hình
         cv2.imshow('MediaPipe Face Detection with Overlay', frame)
